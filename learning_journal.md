@@ -1,4 +1,3 @@
-# js_learning
 # Goals
     1. Complete Eloquent Javascript Book
     2. Review Codeschool Sections on JS
