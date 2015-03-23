@@ -8,6 +8,7 @@ This repo contains all my messing around while I am trying to learn JS
     5. Find another book to deepen learning.
     6. Make an open source contribution, maybe to Atom editor.
 
+Each weekday, I will spend 45+ minutes working to learn JS, each weekend, 1.5+ hours.
 # Journal
 ##3.21.15
 Worked on a few examples from chapter 3 of eloquent js and one of the exercises. Definitely hit 1.5 hour goal.
