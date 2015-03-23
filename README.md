@@ -1,4 +1,5 @@
 # js_learning
+This repo contains all my messing around while I am trying to learn JS
 # Goals
     1. Complete Eloquent Javascript Book
     2. Review Codeschool Sections on JS
