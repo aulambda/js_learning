@@ -1,0 +1,40 @@
+/* "higher order functions allow us to abstract over actions
+ * not just values, they come in several forms. For example, you can have
+ * functions that create new functions."
+ */
+
+function greaterThan(n) { // declares a function that takes one parameter
+    return function(m) { return m > n; }; // returns a function that takes one parameter which in turn returns a boolean indicating whether the parameter of the first function is less than the parameter of the second
+}
+var greaterThan10 = greaterThan(10); // defines a variable which contains a call to the first function using 10 as the 'n' parameter
+console.log(greaterThan10(11)); // calls the first function using the variable name defined above and passes a value of 11 to the "m" parameter.
+
+// "And you can have functions that change other functions."
+
+function noisy(f) { // declares a function 'noisy' that takes one parameter, 'f' which, based on the workings of 'noisy', needs to be a function
+    return function(arg) {  // noisy returns an anonymous function that takes one parameter 'arg' 
+        console.log("calling with", arg);  // logs the string and the value of arg
+        var val = f(arg); // defines a variable with a value equal to the result of calling the function passed in through the 'f' argument with the value of the 'arg' parameter
+        console.log("called with", arg, "- got", val); // logs the string, the value of arg, another string at the value of the 'val' variable
+        return val; // returns the val variables value
+    };
+}
+noisy(Boolean)(0); // calls noisy with the Boolean function as the 'f' parameter. The second set of parens send a parameter in to the inner function.
+
+// "You can even write functions that provide new types of control flow."
+
+function unless(test, then) { // declares a function 'unless' that recieves two arguments, 'test' and 'then'
+    if (!test) then(); // if a test fails then the function passed in as the 'then' argument is run.
+}
+
+function repeat(times, body) {
+    for (var i = 0; i < times; i++) body(i);
+}
+
+repeat(3, function(n) {
+    unless(n % 2, function() {
+        console.log(n, "is even");
+    });
+});
+
+
