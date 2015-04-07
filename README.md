@@ -44,3 +44,8 @@ forEach(numbers, function(number) {
 });
 ```
 the parameter in the function being called as a parameter of 'forEach' is really just a nickname for `array[i]` because the function is replacing the action parameter that gets called with `array[i]` as it's parameter. That was confusing, but I think i get it!
+## 3.31.15
+Spent **2.5 hours** working on eloquent javascript today. Finished reading chapter five. I struggled with understanding the paramter/function situation in the last example even though I had understood it earlier on. Next time I code I need to finish inputting all of the examples into .js files and annotating them so that I understand the concepts in the chapter before going on to the exercises. May miss studying tomorrow.
+
+## 4.3.15
+Spent **25 Minutes** annotating the first section of chapter 5. Using vim now, since I am finding the gui environment of atom easier to be distracted in, and it seems a better investment to get really comfortable in vim than just learning the usefull keybindings for the vim-mode in atom. Also, vim with airline and solarized theme is prettier and more minimal than atom anyways. Need to figure out tmux to make testing code jsut as easy as it was with cmd-i in atom.
