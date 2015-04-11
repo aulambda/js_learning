@@ -11,7 +11,7 @@ console.log(byName["Philibert Haverbeke"]);
 
 function reduceAncestors(person, f, defaultValue) {
     function valueFor(person) {
-        if (person == null)
+        if (person === null)
             return defaultValue;
         else
             return f(person, valueFor(byName[person.mother]),

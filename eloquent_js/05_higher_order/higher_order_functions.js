@@ -23,17 +23,17 @@ noisy(Boolean)(0); // calls noisy with the Boolean function as the 'f' parameter
 
 // "You can even write functions that provide new types of control flow."
 
-function unless(test, then) { // declares a function 'unless' that recieves two arguments, 'test' and 'then'
-    if (!test) then(); // if a test fails then the function passed in as the 'then' argument is run.
+function unless(test, then) {
+    if (!test) then();
 }
 
-function repeat(times, body) { // declares a function 'repeat' which takes two parameters
-    for (var i = 0; i < times; i++) body(i); // calls the function passed in as the cody parameter as many times at the times parameter
+function repeat(times, body) {
+    for (var i = 0; i < times; i++) body(i);
 }
 
-repeat(3, function(n) { // calls the repeat function, running an anonymous function with the paremeter 'n', the 'n' parameter gets filled in with the value of 'i' from the forloop in the repeat function
-    unless(n % 2, function() { // calls the unless function, tests to see whether n/2 leaves a remainder, if not calls the anonymous function passed in as the 'then' variable
-        console.log(n, "is even"); // the 'then' parameter prints n, and a string to the console.
+repeat(3, function(n) {
+    unless(n % 2, function() {
+        console.log(n, "is even");
     });
 });
 

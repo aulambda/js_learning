@@ -49,3 +49,20 @@ Spent **2.5 hours** working on eloquent javascript today. Finished reading chapt
 
 ## 4.3.15
 Spent **25 Minutes** annotating the first section of chapter 5. Using vim now, since I am finding the gui environment of atom easier to be distracted in, and it seems a better investment to get really comfortable in vim than just learning the usefull keybindings for the vim-mode in atom. Also, vim with airline and solarized theme is prettier and more minimal than atom anyways. Need to figure out tmux to make testing code jsut as easy as it was with cmd-i in atom.
+
+## 4.7.15
+Havent just taken the last few days off, but have realyl been struggling with understanding the
+exercises in chapter 5. Finally finished the first two, after **around an hour** of confusion. I did
+look at the answer for the second exercise in chapter 5, but once i realized I was accessing method
+incorrectly was able to figure out hoe to implement it myself. I should work on methods and objects,
+they are confusing. Perhaps I will look at the codecademy and codeschool sections on them again
+
+## 4.9 
+Worked for at least **an hour** on the penultiamte exerice in the fifth chapter, almost done, just
+need to reread and edit when I am more well rested.
+
+## 4.10.15
+Worked for around **2 hours** on the last two exercises in the fifth chapter of Eloquent Javascript.
+The average age exercise is almost done, just having an issue using the `average` function
+correctly. The every/some exercise needs more work, maybe half done.
+

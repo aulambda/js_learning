@@ -4,9 +4,7 @@
  */
 var arrayOfArrays = [[1,2], [3,4], [5,6]];
 
-function flatten(array) {
-    var flat = [];
-   
-    
-    
-
+// console.log(arrayOfArrays[1].concat(arrayOfArrays[2]));
+console.log(arrayOfArrays.reduce(function(a,b){
+        return a.concat(b);
+}));
